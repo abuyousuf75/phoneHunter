@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"  data-theme="cupcake">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunter </title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section class="bg-[#0D6EFD0D]">
+        <div  class="container m-auto">
+            <div class="headerWrapper flex justify-between p-4">
+                <div class="logo">
+                    <h2 class="text-2xl color-[#403F3F] cursor-pointer">Hot Gadgets</h2>
+                </div>
+                <div class="button-header">
+                    <button class="btn btn-primary text-xl text-white rounded-xl capitalize">Sign Up</button>
+                </div>
+            </div>
+            <!--Banner-->
+            <div class="bannerText text-center">
+                <h2 class="text-5xl font-bold pt-4 pb-4">Apple Iphone 13 Pro Max</h2>
+                <p class="text-xl color-[#706F6F] m-auto px-60 py-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.</p>
+               <div class="serchBtn pb-80">
+                <button class="btn btn-secondary text-xl text-white rounded-xl capitalize ">Buy Now</button>
+               </div>
+            </div>
+           
+        </div>
+    </section >
+    <!-- Phone Serch section here -->
+    <section id="serchHere" class="-mt-72">
+        <div class="container m-auto">
+             <!--Banner Img-->
+            <div class="banner-imgWrapper flex  justify-center items-center">
+                <div class="banner-leftImg">
+                  <img src="./images/pngwing 2.png" alt="">
+                </div>
+                <div class="bannerCenterImg">
+                    <img src="./images/pngwing 1.png" alt="">
+                </div>
+                <div class="bannerrightImg">
+                    <img src="./images/pngwing 3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pt-20 pb-20 ">
+        <div class="container m-auto">
+            <div class=" bg-slate-500 p-10  m-auto text-center">
+                  <!-- Serch input -->
+                <input type="text" id="inputField" placeholder="Search Items" class="input w-full max-w-xs rounded" />
+                <button class="btn btn-primary text-xl text-white rounded capitalize" onclick="serchHandel()">Serch</button>
+            </div>
+            <!-- card items start -->
+            <div class="cardmain pt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 " id="phoneContainer">
+               
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
